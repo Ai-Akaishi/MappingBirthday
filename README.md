@@ -42,6 +42,7 @@ Item.tag.Mapping.Range.Z
 現在のロック状態  
 Item.tag.Mapping.Locked  
   
+  
 地図番号の履歴(古い順から現在のものまで)  
 Item.tag.Mapping.History  
   

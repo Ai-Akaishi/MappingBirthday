@@ -5,7 +5,7 @@
 
 # 使い方/How To Use
 
-以下のデータを取得できます。
+以下のデータを取得できます。 / You can get the data below.
 
 ```
 作成時のX座標 / X coordinate when created  
@@ -50,6 +50,29 @@ Item.tag.Mapping.History
 Item.tag.Mapping.Diff  
 例) 一つ前の地図データにする / ex) Revert to the prior data  
 data modify entity @s Item.tag merge from entity @s Item.tag.Mapping.Diff
+```
+
+プラグインタグを利用することで、作成時、縮尺変更時、ロック時に処理を追加できます。 / You can add processes on creating, scaling, and locking using plugin tag.
+
+```
+地図のデータはストレージmapping_birthday: tagに入っています。  
+実行者および実行場所は全て、地図を操作したプレイヤーです。  
+※縮尺変更またはロック時に地図がドロップされた場合は、それを拾ったプレイヤーが操作したと見做されます。  
+Storage 'mapping_birthday: tag' is the data of the map.  
+Your functions are called as/at the player who operates the map.  
+Notice: If a map is dropped when it is scaled or locked, it is assumed that the player who picked it up operated it.  
+  
+作成時に処理を追加したい時 / If you add processes on creating  
+#mapping_birthday:plugins/createdというfunctionタグを作成し、好きなファンクションを設定してね。  
+Prepare a function tag called #mapping_birthday:plugins/created and put your function in it.  
+  
+縮尺変更時に処理を追加したい時 / If you add processes on scaling  
+#mapping_birthday:plugins/scaledというfunctionタグを作成し、好きなファンクションを設定してね。  
+Prepare a function tag called #mapping_birthday:plugins/scaled and put your function in it.  
+  
+ロック時に処理を追加したい時 / If you add processes on locking  
+#mapping_birthday:plugins/lockedというfunctionタグを作成し、好きなファンクションを設定してね。  
+Prepare a function tag called #mapping_birthday:plugins/locked and put your function in it.  
 ```
 
 # 連絡はこちら/Contact

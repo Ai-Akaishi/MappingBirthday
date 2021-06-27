@@ -3,6 +3,11 @@
 (Minecraft 1.16.2+) Enable to Save Data of a Map in its Tag.  
 地図のデータをタグの中に記録するデータパック
 
+# 動作確認済みバージョン / Verified minecraft versions
+
+- 1.16.2
+- 1.16.5
+
 # 使い方/How To Use
 
 以下のデータを取得できます。 / You can get the data below.

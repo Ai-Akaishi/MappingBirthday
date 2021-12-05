@@ -5,12 +5,13 @@
 
 # 動作確認済みバージョン / Verified minecraft versions
 
-- 1.17.x
+- 1.18
 
 以下のバージョンは右のReleasesからどうぞ。  
 For the following versions, please check Releases on the right.
 
 - 1.16.2
+- 1.17.x
 
 # 使い方/How To Use
 

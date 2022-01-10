@@ -5,13 +5,17 @@
 
 # 動作確認済みバージョン / Verified minecraft versions
 
-- 1.18
+- 1.18.x
 
 以下のバージョンは右のReleasesからどうぞ。  
 For the following versions, please check Releases on the right.
 
 - 1.16.2
 - 1.17.x
+
+# 依存ライブラリ / Dependencies
+
+[Player Item Tuner](https://github.com/Ai-Akaishi/PlayerItemTuner)
 
 # 使い方/How To Use
 

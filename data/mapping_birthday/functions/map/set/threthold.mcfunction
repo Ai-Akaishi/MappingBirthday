@@ -6,6 +6,7 @@
 # Calculate map threshold.
 # @within
 #   mapping_birthday:map/**
+#   mapping_birthday:tuner/scale/scale
 
 # 距離
 execute store result storage mapping_birthday: tag.Mapping.Length int 1 run data get storage mapping_birthday: tag.Mapping.Scale 128

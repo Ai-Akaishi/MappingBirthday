@@ -13,13 +13,13 @@
 #define storage mapping_birthday:
 
 # マップ作成時
-execute if entity @s[advancements={mapping_birthday:check={create_map=true}}] run function mapping_birthday:map/create
+execute if entity @s[advancements={mapping_birthday:check={create_map=true}}] run function mapping_birthday:map/create/
 # マップ作成時じゃない時
-execute if entity @s[advancements={mapping_birthday:check={create_map=false}}] run function mapping_birthday:map/scale
+execute if entity @s[advancements={mapping_birthday:check={create_map=false}}] run function mapping_birthday:map/scale/
 
 # マップ作成時のスコアもういらない
 scoreboard players reset @s MapBirth
 # インベントリの確認が終わったら、データパックの処理を有効にする
 execute if entity @s[advancements={mapping_birthday:check={initialize=true}}] run advancement grant @s only mapping_birthday:activated
-# 進捗最有効化
+# 進捗再有効化
 advancement revoke @s only mapping_birthday:check

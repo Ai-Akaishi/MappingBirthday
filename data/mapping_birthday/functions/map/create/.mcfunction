@@ -24,4 +24,5 @@ execute store result score __ MapBirth run clear @s minecraft:filled_map 0
 execute if score _ MapBirth = __ MapBirth anchored eyes positioned ^ ^ ^ anchored feet positioned ~ ~-0.3 ~ as @e[type=item,sort=nearest,nbt={Age:0s,Item:{id:"minecraft:filled_map"}},limit=1] run data modify storage mapping_birthday: tag.map set from entity @s Item.tag.map
 execute if data storage mapping_birthday: tag.map run function mapping_birthday:map/create/dropped
 # 個数一致しなければ中
-execute unless data storage mapping_birthday: tag.map run function mapping_birthday:map/create/update
+execute unless data storage mapping_birthday: tag.map run data modify storage player_item_tuner: custom set value "MappingBirthdayCreate"
+execute unless data storage mapping_birthday: tag.map run function #player_item_tuner:custom/inventory
